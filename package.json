@@ -1,0 +1,48 @@
+{
+  "name": "envdiffkit",
+  "version": "0.1.0",
+  "description": "Local-first CLI for comparing environment variable usage against examples, docs, and CI.",
+  "type": "module",
+  "bin": {
+    "envdiffkit": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.js",
+    "smoke": "npm run build && bash scripts/smoke.sh",
+    "package:smoke": "npm pack --dry-run",
+    "release:check": "npm test && npm run check && npm run smoke && npm run package:smoke"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "configuration",
+    "cli",
+    "devops",
+    "github-actions",
+    "twelve-factor",
+    "secrets",
+    "typescript"
+  ],
+  "author": "Roger Chappel",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
