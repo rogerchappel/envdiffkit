@@ -1,0 +1,10 @@
+name: ci
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      PACKAGE_REGISTRY: ${{ vars.PACKAGE_REGISTRY }}
+    steps:
+      - run: npm publish --//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
+      - run: echo "$MISSING_ACTIONS_FLAG"
