@@ -1,0 +1,29 @@
+{
+  "project": "envdiffkit",
+  "owner": "oss-factory-subagent",
+  "repoPath": "/Users/roger/Developer/my-opensource/envdiffkit",
+  "github": {
+    "owner": "rogerchappel",
+    "repo": "envdiffkit",
+    "visibility": "public",
+    "defaultBranch": "main"
+  },
+  "qualityBar": [
+    "functional local-first MVP",
+    "fixture-backed tests",
+    "README with examples and safety model",
+    "30-50 meaningful commits",
+    "local verification and CLI smoke",
+    "branch protection best effort"
+  ],
+  "commands": {
+    "verify": [
+      "npm test",
+      "npm run check",
+      "npm run build",
+      "npm run smoke",
+      "bash scripts/validate.sh"
+    ]
+  },
+  "summary": "A tiny local CLI that compares environment requirements across source code, `.env.example`, shell scripts, and CI files, then writes a clean \u201cwhat config is expected here?\u201d report. No secrets leave the room. \ud83c\udf31"
+}
