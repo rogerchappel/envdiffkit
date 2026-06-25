@@ -12,6 +12,9 @@
   },
   "files": [
     "dist",
+    "demo",
+    "docs",
+    "fixtures",
     "README.md",
     "LICENSE",
     "CHANGELOG.md",

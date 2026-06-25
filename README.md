@@ -20,6 +20,16 @@ npx envdiffkit scan fixtures/node-app --format json --fail-on missing
 npx envdiffkit explain DATABASE_URL
 ```
 
+For a checked-in onboarding audit demo:
+
+```sh
+npm install
+npm run build
+bash demo/run-onboarding-audit.sh
+```
+
+See [Onboarding Env Audit Demo](docs/tutorials/onboarding-env-audit.md) for the walkthrough. Promotion drafts live in [docs/promo/video-brief.md](docs/promo/video-brief.md) and [docs/promo/social-hooks.md](docs/promo/social-hooks.md).
+
 Example output highlights:
 
 - variables used in code, scripts, docs, Dockerfiles, and CI
@@ -84,6 +94,7 @@ npm test
 npm run check
 npm run build
 npm run smoke
+bash demo/run-onboarding-audit.sh
 npm run package:smoke
 npm run release:check
 bash scripts/validate.sh
