@@ -39,6 +39,14 @@ Example output highlights:
 - suspicious secret-like names such as `API_TOKEN` or `PRIVATE_KEY`
 - file and line evidence for each finding
 
+## Verification
+
+Run the release gate before changing scanner behavior or package metadata:
+
+```sh
+npm run release:check
+```
+
 ## CLI
 
 ```txt
