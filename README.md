@@ -4,6 +4,20 @@ A tiny local-first CLI that answers: **“what environment config does this proj
 
 `envdiffkit` scans source, shell scripts, Dockerfiles, Markdown, and GitHub Actions workflows, compares discovered environment variable usage with `.env.example`, then emits a deterministic Markdown or JSON report. It is built for maintainers, onboarding, and agentic coding workflows that need config context without leaking secrets.
 
+
+## Quickstart
+
+Run the tool from a fresh checkout:
+
+```sh
+npm install
+npm run build
+node dist/cli.js --help
+npm test
+```
+
+The help command is a quick smoke test for the CLI entrypoint, and `npm test` runs the committed regression suite before you depend on the output.
+
 ## Install
 
 ```sh
