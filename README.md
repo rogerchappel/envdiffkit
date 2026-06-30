@@ -108,7 +108,9 @@ npm run release:check
 bash scripts/validate.sh
 ```
 
-A real smoke writes reports from checked-in fixtures under `tmp/`.
+The package smoke packs the tarball, installs it into a temporary project,
+checks the installed `envdiffkit` bin, and imports the public API. A real smoke
+writes reports from checked-in fixtures under `tmp/`.
 
 ## Limitations
 
