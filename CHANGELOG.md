@@ -10,6 +10,11 @@ format and uses semantic versioning when versioned releases are published.
 ### Added
 
 - Initial project setup.
+- Packed-package smoke coverage for install, CLI help/version, scan, and public API import.
+
+### Changed
+
+- Package metadata now advertises generated TypeScript declarations through `types` and export conditions.
 
 ## Release Links
 
